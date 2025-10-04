@@ -1,0 +1,408 @@
+.about-page {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding-bottom: 3rem;
+}
+
+.about-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-header p {
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.mission-section {
+  background: white;
+  border-radius: 12px;
+  padding: 3rem;
+  margin: -2rem auto 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.mission-section h2 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.mission-text {
+  color: #555;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.vision-section {
+  background: white;
+  border-radius: 12px;
+  padding: 3rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.vision-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.vision-text h2 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.vision-text p {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.vision-points {
+  list-style: none;
+  padding: 0;
+}
+
+.vision-points li {
+  color: #555;
+  font-size: 1.05rem;
+  padding: 0.5rem 0;
+}
+
+.vision-graphic {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.graphic-item {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  aspect-ratio: 1;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  transition: transform 0.3s;
+}
+
+.graphic-item:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.impact-section {
+  background: white;
+  border-radius: 12px;
+  padding: 3rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.impact-section h2 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.impact-stat {
+  text-align: center;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  transition: all 0.3s;
+}
+
+.impact-stat:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.impact-number {
+  font-size: 3.5rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.impact-stat:hover .impact-number {
+  -webkit-text-fill-color: white;
+}
+
+.impact-label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.impact-stat:hover .impact-label {
+  color: white;
+}
+
+.impact-stat p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.impact-stat:hover p {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.how-it-works {
+  background: white;
+  border-radius: 12px;
+  padding: 3rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.how-it-works h2 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.workflow-steps {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.workflow-step {
+  flex: 1;
+  text-align: center;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+.step-number {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 auto 1.5rem;
+}
+
+.workflow-step h3 {
+  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.workflow-step p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.workflow-arrow {
+  font-size: 2rem;
+  color: #667eea;
+  font-weight: bold;
+}
+
+.team-section {
+  background: white;
+  border-radius: 12px;
+  padding: 3rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.team-section h2 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.team-description {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.value-card {
+  text-align: center;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  transition: all 0.3s;
+  border: 2px solid transparent;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  border-color: #667eea;
+  background: white;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+.value-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.value-card h4 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.value-card p {
+  color: #666;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.cta-about {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 12px;
+  padding: 4rem 3rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cta-about h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta-about p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-github,
+.btn-contribute {
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: all 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-github {
+  background-color: white;
+  color: #667eea;
+}
+
+.btn-github:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-contribute {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-contribute:hover {
+  background-color: white;
+  color: #667eea;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .about-header h1 {
+    font-size: 2rem;
+  }
+
+  .vision-content {
+    grid-template-columns: 1fr;
+  }
+
+  .vision-graphic {
+    display: none;
+  }
+
+  .workflow-steps {
+    flex-direction: column;
+  }
+
+  .workflow-arrow {
+    transform: rotate(90deg);
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .btn-github,
+  .btn-contribute {
+    width: 100%;
+    justify-content: center;
+  }
+}
