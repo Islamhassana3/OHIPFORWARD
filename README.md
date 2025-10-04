@@ -135,6 +135,19 @@ HOST=0.0.0.0
 DEBUG=False
 ```
 
+## Documentation
+
+### Complete Documentation Index
+
+For a comprehensive guide to all documentation, see the **[Documentation Index →](docs/DOCUMENTATION_INDEX.md)**
+
+Key documents:
+- **[Complete Broken Foot Treatment Journey](docs/BROKEN_FOOT_JOURNEY.md)** - Detailed 12-step patient journey
+- **[Detailed System Architecture](docs/SYSTEM_ARCHITECTURE_DETAILED.md)** - Comprehensive technical architecture
+- **[API Reference](docs/API.md)** - Complete API documentation
+- **[Features Guide](docs/FEATURES.md)** - Feature descriptions and use cases
+- **[Deployment Guide](docs/DEPLOYMENT.md)** - Production deployment instructions
+
 ## API Documentation
 
 ### Endpoints
@@ -269,6 +282,21 @@ MIT License - see LICENSE file for details
 For issues and questions:
 - GitHub Issues: [github.com/Islamhassana3/OHIPFORWARD/issues](https://github.com/Islamhassana3/OHIPFORWARD/issues)
 - Email: support@ohipforward.ca
+
+## Example Patient Journey
+
+Want to see how OHIP Forward works end-to-end? Check out our detailed patient journey documentation:
+
+**[Complete Broken Foot Treatment Journey →](docs/BROKEN_FOOT_JOURNEY.md)**
+
+This comprehensive walkthrough shows all 12 steps from initial injury through complete recovery, including:
+- AI-powered symptom assessment
+- Automated X-ray scheduling
+- Transportation coordination
+- Treatment plan creation
+- Medication & equipment delivery
+- Continuous recovery monitoring
+- Final clearance and prevention education
 
 ## Roadmap
 
