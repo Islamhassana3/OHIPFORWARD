@@ -15,15 +15,13 @@ if not exist "node_modules\" (
     echo.
 )
 
-REM Check if PORT is already set, otherwise find an available port
-if "%PORT%"=="" (
-    echo 🔍 Finding available port...
-    for /f %%i in ('node ..\scripts\find-free-port.js') do set PORT=%%i
+REM Always find an available port to avoid conflicts
+echo 🔍 Finding available port...
+for /f %%i in ('node ..\scripts\find-free-port.js') do set PORT=%%i
 
-    if "%PORT%"=="" (
-        echo ❌ Failed to find an available port
-        exit /b 1
-    )
+if "%PORT%"=="" (
+    echo ❌ Failed to find an available port
+    exit /b 1
 )
 
 REM Start the development server

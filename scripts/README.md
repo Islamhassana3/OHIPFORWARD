@@ -28,21 +28,9 @@ preview.bat
 
 ## Port Configuration
 
-The scripts automatically find an available port starting from 3000. If port 3000 is in use, it will try 3001, 3002, and so on up to 3100.
+The scripts **always** automatically find an available port starting from 3000. If port 3000 is in use, it will try 3001, 3002, and so on up to 3100. This ensures that the preview will never fail due to port conflicts.
 
-If you want to force a specific port, you can still set the PORT environment variable:
-
-**Linux/Mac:**
-```bash
-PORT=3001 ./preview.sh
-```
-
-**Windows:**
-```cmd
-set PORT=3001 && preview.bat
-```
-
-Note: When using the PORT variable, the script will skip the automatic port detection.
+The automatic port detection runs every time to guarantee a free port is always found, preventing any conflicts with other applications or services.
 
 ## Browser Configuration
 
