@@ -37,7 +37,7 @@ npm run preview
 cd frontend && npm install && npm start
 ```
 
-The application will automatically open in your browser. The preview scripts automatically detect and use an available port (starting from 3000) to avoid conflicts with other applications. 🎉
+The application will automatically open in your browser. The development server automatically detects and uses an available port (starting from 3000) to avoid conflicts with other applications. 🎉
 
 ---
 
