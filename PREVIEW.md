@@ -239,18 +239,9 @@ The following screenshots showcase the enhanced UI:
 - **Network URL**: Available on local network (shown when starting dev server)
 
 ### Port Configuration
-The preview scripts automatically find an available port starting from 3000. If port 3000 is already in use (e.g., by another application), the script will automatically use the next available port (3001, 3002, etc.).
+The preview scripts **always** automatically detect and use an available port starting from 3000. This ensures that the preview will never fail due to port conflicts. If port 3000 is already in use (e.g., by another application), the script will automatically find and use the next available port (3001, 3002, etc., up to 3100).
 
-To force a specific port:
-```bash
-PORT=3001 npm start
-```
-
-Or use the preview script with a specific port:
-```bash
-PORT=3001 ./scripts/preview.sh    # Linux/Mac
-set PORT=3001 && scripts\preview.bat    # Windows
-```
+**Automatic port detection runs every time** to guarantee a free port is always available, preventing any conflicts with other applications or services.
 
 ## 🛠️ Development Tools
 

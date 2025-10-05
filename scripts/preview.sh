@@ -18,18 +18,16 @@ if [ ! -d "node_modules" ]; then
     echo ""
 fi
 
-# Check if PORT is already set, otherwise find an available port
-if [ -z "$PORT" ]; then
-    echo "🔍 Finding available port..."
-    FREE_PORT=$(node ../scripts/find-free-port.js)
+# Always find an available port to avoid conflicts
+echo "🔍 Finding available port..."
+FREE_PORT=$(node ../scripts/find-free-port.js)
 
-    if [ $? -ne 0 ]; then
-        echo "❌ Failed to find an available port"
-        exit 1
-    fi
-    
-    PORT=$FREE_PORT
+if [ $? -ne 0 ]; then
+    echo "❌ Failed to find an available port"
+    exit 1
 fi
+
+export PORT=$FREE_PORT
 
 # Start the development server
 echo "🌐 Starting development server on http://localhost:$PORT"
