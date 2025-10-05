@@ -1,0 +1,23 @@
+{
+  "name": "ohipforward",
+  "version": "1.0.0",
+  "description": "Open-source healthcare coordination system",
+  "scripts": {
+    "preview": "cd frontend && npm install && npm start",
+    "frontend": "cd frontend && npm start",
+    "frontend:build": "cd frontend && npm run build",
+    "backend": "python src/main.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Islamhassana3/OHIPFORWARD.git"
+  },
+  "keywords": [
+    "healthcare",
+    "coordination",
+    "ai",
+    "ontario",
+    "ohip"
+  ],
+  "license": "MIT"
+}
