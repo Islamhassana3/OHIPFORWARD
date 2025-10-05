@@ -12,6 +12,27 @@ This document provides instructions for previewing the OHIPFORWARD healthcare co
 
 ### Starting the Frontend
 
+#### Option 1: Using the Preview Script (Recommended)
+The easiest way to start the application with automatic port detection:
+
+**Linux/Mac:**
+```bash
+./scripts/preview.sh
+```
+
+**Windows:**
+```cmd
+scripts\preview.bat
+```
+
+The script will:
+- Automatically install dependencies if needed
+- Find an available port (starting from 3000)
+- Start the development server
+- Open the application in your browser
+
+#### Option 2: Manual Start
+
 1. **Navigate to the frontend directory:**
 ```bash
 cd frontend
@@ -27,7 +48,7 @@ npm install
 npm start
 ```
 
-The application will automatically open in your browser at `http://localhost:3000`
+The application will automatically open in your browser at `http://localhost:3000` (or prompt you if port 3000 is in use)
 
 ## 📱 Available Pages
 
@@ -214,13 +235,21 @@ The following screenshots showcase the enhanced UI:
 ## 🔗 Preview Access
 
 ### Local Development
-- **Main URL**: `http://localhost:3000`
+- **Main URL**: `http://localhost:3000` (or next available port if 3000 is in use)
 - **Network URL**: Available on local network (shown when starting dev server)
 
 ### Port Configuration
-To use a different port:
+The preview scripts automatically find an available port starting from 3000. If port 3000 is already in use (e.g., by another application), the script will automatically use the next available port (3001, 3002, etc.).
+
+To force a specific port:
 ```bash
 PORT=3001 npm start
+```
+
+Or use the preview script with a specific port:
+```bash
+PORT=3001 ./scripts/preview.sh    # Linux/Mac
+set PORT=3001 && scripts\preview.bat    # Windows
 ```
 
 ## 🛠️ Development Tools
