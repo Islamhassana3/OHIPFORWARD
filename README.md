@@ -2,6 +2,45 @@
 
 Open-source healthcare coordination system that transforms fragmented patient journeys into seamless AI-managed experiences.
 
+---
+
+## 🚀 Quick Preview
+
+**Want to see it in action?** Click the button below or run the preview script:
+
+<div align="center">
+  
+[![🌐 Launch Preview](https://img.shields.io/badge/🌐_Launch_Preview-localhost:3000-blue?style=for-the-badge)](http://localhost:3000)
+[![📖 Preview Guide](https://img.shields.io/badge/📖_Preview_Guide-Documentation-green?style=for-the-badge)](PREVIEW.md)
+
+</div>
+
+### One-Command Preview
+
+**Linux/Mac:**
+```bash
+./scripts/preview.sh
+```
+
+**Windows:**
+```cmd
+scripts\preview.bat
+```
+
+**Using npm:**
+```bash
+npm run preview
+```
+
+**Manual start:**
+```bash
+cd frontend && npm install && npm start
+```
+
+The application will automatically open at `http://localhost:3000` 🎉
+
+---
+
 ## 🎨 UI Preview
 
 **Enhanced multi-page UI is now available!** Check out the [Preview Guide](PREVIEW.md) for detailed instructions on accessing and exploring the interface.
