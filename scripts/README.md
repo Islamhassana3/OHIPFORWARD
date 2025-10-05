@@ -39,6 +39,20 @@ PORT=3001 ./preview.sh
 set PORT=3001 && preview.bat
 ```
 
+## Browser Configuration
+
+By default, the server opens your default browser automatically. To disable this:
+
+**Linux/Mac:**
+```bash
+BROWSER=none ./preview.sh
+```
+
+**Windows:**
+```cmd
+set BROWSER=none && preview.bat
+```
+
 ## Stopping the Server
 
 Press `Ctrl+C` in the terminal to stop the development server.
