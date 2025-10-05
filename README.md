@@ -2,6 +2,19 @@
 
 Open-source healthcare coordination system that transforms fragmented patient journeys into seamless AI-managed experiences.
 
+## 🎨 UI Preview
+
+**Enhanced multi-page UI is now available!** Check out the [Preview Guide](PREVIEW.md) for detailed instructions on accessing and exploring the interface.
+
+**Quick Start:**
+```bash
+cd frontend
+npm install
+npm start
+```
+
+Visit `http://localhost:3000` to explore the application.
+
 ## Overview
 
 OHIPFORWARD is a comprehensive healthcare coordination platform designed for Ontario's healthcare network. It leverages AI and automation to streamline patient care, reduce wait times by 60%, cut costs by 25%, and optimize system-wide demand distribution.
