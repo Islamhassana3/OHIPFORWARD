@@ -18,12 +18,25 @@ if [ ! -d "node_modules" ]; then
     echo ""
 fi
 
+# Check if PORT is already set, otherwise find an available port
+if [ -z "$PORT" ]; then
+    echo "🔍 Finding available port..."
+    FREE_PORT=$(node ../scripts/find-free-port.js)
+
+    if [ $? -ne 0 ]; then
+        echo "❌ Failed to find an available port"
+        exit 1
+    fi
+    
+    PORT=$FREE_PORT
+fi
+
 # Start the development server
-echo "🌐 Starting development server on http://localhost:3000"
+echo "🌐 Starting development server on http://localhost:$PORT"
 echo "📱 The application will open automatically in your browser"
 echo ""
 echo "Press Ctrl+C to stop the server"
 echo ""
 
-# Start the server (npm start already opens the browser automatically)
-npm start
+# Start the server on the available port
+PORT=$PORT npm start

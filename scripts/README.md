@@ -17,8 +17,9 @@ preview.bat
 ## What it does
 
 1. Checks if dependencies are installed (runs `npm install` if needed)
-2. Starts the development server on `http://localhost:3000`
-3. Automatically opens the application in your default browser
+2. Finds an available port starting from 3000 (to avoid conflicts with other applications)
+3. Starts the development server on the available port
+4. Automatically opens the application in your default browser
 
 ## Requirements
 
@@ -27,7 +28,9 @@ preview.bat
 
 ## Port Configuration
 
-By default, the preview runs on port 3000. To use a different port:
+The scripts automatically find an available port starting from 3000. If port 3000 is in use, it will try 3001, 3002, and so on up to 3100.
+
+If you want to force a specific port, you can still set the PORT environment variable:
 
 **Linux/Mac:**
 ```bash
@@ -38,6 +41,8 @@ PORT=3001 ./preview.sh
 ```cmd
 set PORT=3001 && preview.bat
 ```
+
+Note: When using the PORT variable, the script will skip the automatic port detection.
 
 ## Browser Configuration
 
