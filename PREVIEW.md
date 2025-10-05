@@ -48,7 +48,7 @@ npm install
 npm start
 ```
 
-The application will automatically open in your browser at `http://localhost:3000` (or prompt you if port 3000 is in use)
+The application will automatically open in your browser. The development server will automatically find and use an available port (starting from 3000).
 
 ## 📱 Available Pages
 
@@ -239,7 +239,7 @@ The following screenshots showcase the enhanced UI:
 - **Network URL**: Available on local network (shown when starting dev server)
 
 ### Port Configuration
-The preview scripts **always** automatically detect and use an available port starting from 3000. This ensures that the preview will never fail due to port conflicts. If port 3000 is already in use (e.g., by another application), the script will automatically find and use the next available port (3001, 3002, etc., up to 3100).
+The development server **always** automatically detects and uses an available port starting from 3000. This applies to both the preview scripts and direct `npm start` commands. This ensures that the application will never fail due to port conflicts. If port 3000 is already in use (e.g., by another application), the server will automatically find and use the next available port (3001, 3002, etc., up to 3100).
 
 **Automatic port detection runs every time** to guarantee a free port is always available, preventing any conflicts with other applications or services.
 
