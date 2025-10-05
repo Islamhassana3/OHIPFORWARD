@@ -37,7 +37,7 @@ npm run preview
 cd frontend && npm install && npm start
 ```
 
-The application will automatically open at `http://localhost:3000` 🎉
+The application will automatically open in your browser. The preview scripts automatically detect and use an available port (starting from 3000) to avoid conflicts with other applications. 🎉
 
 ---
 
